@@ -131,7 +131,7 @@ message ResponseRateList {
     message StepupGacha {
         int32 step = 1;
         repeated RareRate rare_rate_list = 2;
-        repeated FixedDraw	fixed_draw_list = 3;
+        repeated FixedDraw fixed_draw_list = 3;
     }
 
     NormalGacha normal_gacha = 1;
