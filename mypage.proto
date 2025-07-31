@@ -20,7 +20,7 @@ message ResponseIndex {
         int32 transition_id = 3;
         // none = 0, spy_mission = 1, character_list = 2, gacha = 3, weapon_create = 4, item_create = 5
         // expedition = 8, day_of_week_top = 10, shop = 11, purchase_shop = 12, info = 13, event_top = 14
-        int32 transition_value = 4; //sub number. like info detail number, gacha detail number etc ...
+        int32 transition_value = 4; // ex: info detail number, gacha detail number
         string start_at = 5;
         string end_at = 6;
         int32 end_of_tutorial_from = 7;

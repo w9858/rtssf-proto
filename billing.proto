@@ -81,7 +81,7 @@ message ResponseTop {
         int32 item_index = 1;
         string name = 2;
         string pricing_code = 3;
-        int32 stock_count = 4; /// inf -1
+        int32 stock_count = 4; // inf -1
         int32 label_type = 6;
         string icon = 7;
         int32 price = 8;
@@ -90,8 +90,8 @@ message ResponseTop {
         repeated Omake omake_list = 13;
         string description = 14;
         string product_id = 15;
-        int32 subscription_id = 16; /// 0 meant its not subscribe item
-        int32 purchasable_time = 17; /// how long time will be (re)purchasable (sec)
+        int32 subscription_id = 16; // 0 meant its not subscribe item
+        int32 purchasable_time = 17; // how long time will be (re)purchasable (sec)
         string start_at = 18;
         string end_at = 19;
     }
@@ -104,5 +104,5 @@ message ResponseTop {
     }
     
     repeated Item item_list = 1;
-    int32 registered_birthday = 2; /// 1 meant registered, 2 meant not
+    int32 registered_birthday = 2; // 1 meant registered, 2 meant not
 }

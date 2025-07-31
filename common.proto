@@ -72,7 +72,7 @@ message TUserArchive {
 
 message TUserBackground {
     int32 background_id = 1;
-    int32 obtained_time = 2; ///UNIX timestamp
+    int32 obtained_time = 2;
 }
 
 message TUserBoard {
@@ -97,13 +97,13 @@ message TUserCount {
 }
 
 message TUserCrystal {
-    int32 amount = 1; /// 1=2+3
+    int32 amount = 1; // 1=2+3
     int32 amount_free = 2;
     int32 amount_payment = 3;
 }
 
 message TUserDeck {
-    int32 deck_no = 1; /// 1~10 (1~5 for old client maybe)
+    int32 deck_no = 1; // 1~10 (1~5 for old client maybe)
     int32 unit_id_1 = 2;
     int32 sub_unit_id_1 = 4;
     int32 unit_id_2 = 5;
@@ -126,7 +126,7 @@ message TUserEvent {
 
 message TUserGachaNormal {
     int32 gacha_id = 1;
-    /// !dead field! int32 draw_count = 2;
+    // [REMOVED] int32 draw_count = 2;
     string updated_at = 3;
     int32 execution_count = 4;
 }
@@ -134,7 +134,7 @@ message TUserGachaNormal {
 message TUserGachaNormalDetail {
     int32 gacha_id = 1;
     int32 gacha_detail_id = 2;
-    /// !dead field! int32 draw_count = 3;
+    // [REMOVED] int32 draw_count = 3;
     string updated_at = 4;
     int32 execution_count = 5;
 }
@@ -165,9 +165,9 @@ message TUserQuest {
 
 message TUserQuestStatus{
     int32 quest_id = 1;
-    string token = 4; /// token might be made at Spy.Quest.ResponseStart
+    string token = 4; // token might be made at Spy.Quest.ResponseStart
     string start_at = 5;
-    string end_at = 6; /// if playing quest, this is ""
+    string end_at = 6; // if playing quest, this is ""
 }
 
 message TUserRecipe {
@@ -181,7 +181,7 @@ message TUserSpy {
     int32 spy_id = 2;
     int32 unit_id = 3;
     int32 sub_unit_id = 4;
-    int32 state = 5; /// idle=0 receiving=1 received=2 trashed=3
+    int32 state = 5; // idle=0 receiving=1 received=2 trashed=3
     int32 start_time = 6;
     int32 is_force_clear = 7;
     int32 subscription_flag = 8;
@@ -216,7 +216,9 @@ message TUserUnit {
     int32 user_id = 1;
     int32 unit_id = 2;
     int32 rarity = 3;
-    // 1 - Can be upgrade 60lv / 2 - cbu 70lv / 3 - cbu 80lv / 4 - cbu 90lv / 5 - cbu 100lv / 6 - no more upgradable
+    // rarity:
+    // lv limit break available to 60lv = 1 // to 70lv = 2 // to 80lv = 3
+    // to 90lv = 4// to 100lv = 5 // no more upgradable = 6
     int32 lv = 4;
     int32 max_lv = 5;
     int32 exp = 6;
@@ -263,7 +265,7 @@ message TUserWeaponStatus {
 }
 
 message TUserWorker {
-    int32 worker_type = 1; // workertype has only stamina. use 1.
+    int32 worker_type = 1; // workertype only has stamina. use 1.
     int32 max_worker = 2;
     int32 add_worker = 3;
     int32 recover_end_time = 4;

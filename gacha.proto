@@ -76,7 +76,7 @@ message ResponseList {
     message MGachaStepupDetail {
         int32 gacha_id = 1;
         int32 step = 2;
-        /// !dead field! int32 draw_rare_id = 3; int32 draw_box_id = 4;
+        // [REMOVED] int32 draw_rare_id = 3; int32 draw_box_id = 4;
         int32 draw_count = 5;
         int32 resource_type = 6;
         int32 resource_id = 7;
@@ -94,7 +94,7 @@ message ResponseList {
     }
 
     repeated MGacha m_gacha_list = 1;
-    /// !dead field! repeated MGachaNormal m_gacha_normal_list = 2;
+    // [REMOVED] repeated MGachaNormal m_gacha_normal_list = 2;
     repeated MGachaNormalDetail m_gacha_normal_detail_list = 3;
     repeated MGachaNormalOmake m_gacha_normal_omake_list = 4;
     repeated MGachaStepup m_gacha_stepup_list = 5;

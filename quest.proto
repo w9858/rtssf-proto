@@ -24,7 +24,7 @@ message RequestClear {
     bool is_clear_mission_2 = 8;
     bool is_clear_mission_3 = 9;
     int32 active_skill_count = 10;
-    /// !dead field! int32 spyce_action_count = 11;
+    // [REMOVED] int32 spyce_action_count = 11;
     int32 spyce_burst_count = 12;
     int32 score = 13;
 }
@@ -141,7 +141,7 @@ message ResponseContinue {
 }
 
 message ResponseFail {
-    /// !dead field! repeated Common.TUserCount t_user_count_list = 1;
+    // [REMOVED] repeated Common.TUserCount t_user_count_list = 1;
     Common.UpdateResourceResult update_resource_result = 2;
 }
 

@@ -15,7 +15,7 @@ message RequestLock {
     }
 
     repeated Weapon weapon_list = 1;
-    int32 flag = 2; /// 1 meant LOCK , 0 meant UNLOCK
+    int32 flag = 2; // 1 meant LOCK , 0 meant UNLOCK
 }
 
 message RequestSell {

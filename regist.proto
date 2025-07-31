@@ -18,7 +18,7 @@ message RequestRelation {
 }
 
 message RequestSmartphone {
-    /// !dead field! string name = 1;
+    // [REMOVED] string name = 1;
 }
 
 message RequestTransfer {
