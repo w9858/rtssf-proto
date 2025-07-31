@@ -22,6 +22,6 @@ message ResponseList {
         string name = 3;
     }
 
-    repeated MHelp	m_help_list	= 1;
-    repeated MHelpCategory	m_help_category_list = 2;
+    repeated MHelp m_help_list = 1;
+    repeated MHelpCategory m_help_category_list = 2;
 }

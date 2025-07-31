@@ -27,7 +27,7 @@ message ResponseDraw {
     Common.TUserGachaNormalDetail t_user_gacha_normal_detail = 5;
     Common.UpdateResourceResult update_resource_result = 6;
     int32 effect_1 = 7;
-	int32 effect_2 = 8;
+    int32 effect_2 = 8;
     repeated int32 effect_3_list = 9;    
 }
 

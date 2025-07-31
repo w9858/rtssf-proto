@@ -20,7 +20,7 @@ message RequestList {
 }
 
 message ResponseBuy {
-    Common.UpdateResourceResult	update_resource_result = 2;
+    Common.UpdateResourceResult update_resource_result = 2;
 }
 
 message ResponseItemList {

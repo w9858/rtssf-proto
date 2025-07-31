@@ -11,5 +11,5 @@ message RequestCreate {
 }
 
 message ResponseCreate {
-    Common.UpdateResourceResult	update_resource_result = 1;
+    Common.UpdateResourceResult update_resource_result = 1;
 }
